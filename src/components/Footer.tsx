@@ -11,6 +11,7 @@ const PLAN_LINKS = [
 
 const COMPANY_LINKS = [
   { href: "/about", label: "About Us" },
+  { href: "/join-us", label: "Join Us — Careers" },
   { href: "/contact", label: "Contact" },
   { href: "/contact#form", label: "Get a Quote" },
 ];

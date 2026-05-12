@@ -158,6 +158,13 @@ export default function AboutPage() {
             >
               View Our Plans
             </Link>
+            <Link
+              href="/join-us"
+              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold border-2 text-white"
+              style={{ borderColor: "rgba(249,115,22,0.5)", fontFamily: "var(--font-work-sans)" }}
+            >
+              Join Our Team
+            </Link>
           </div>
         </div>
       </section>
