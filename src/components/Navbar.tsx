@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
@@ -24,35 +24,15 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50">
-      {/* Utility bar */}
-      <div style={{ backgroundColor: "#0052CC" }} className="hidden md:block">
-        <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
-          <span className="text-white text-sm flex items-center gap-2">
-            <Phone className="w-3.5 h-3.5" />
-            Speak to a Licensed Agent — Mon–Fri 8am–8pm ET
-          </span>
-          <a
-            href="tel:+18005551234"
-            className="text-white font-bold text-sm tracking-wide hover:text-orange-300 transition-colors"
-            style={{ fontFamily: "var(--font-work-sans)" }}
-          >
-            (800) 555-1234
-          </a>
-        </div>
-      </div>
-
-      {/* Main nav */}
-      <nav
-        className={`bg-white transition-shadow ${scrolled ? "shadow-md" : "shadow-sm"}`}
-      >
-        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <nav className={`bg-white transition-shadow ${scrolled ? "shadow-md" : "shadow-sm"}`}>
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/logo.png"
               alt="Dadzie Insurance Group"
-              width={180}
-              height={60}
-              className="h-12 w-auto object-contain"
+              width={720}
+              height={240}
+              className="h-[120px] w-auto object-contain"
               priority
             />
           </Link>
@@ -72,10 +52,7 @@ export function Navbar() {
             <Link
               href="/contact#form"
               className="px-5 py-2.5 rounded-lg text-sm font-bold text-white transition-colors"
-              style={{
-                backgroundColor: "#F97316",
-                fontFamily: "var(--font-work-sans)",
-              }}
+              style={{ backgroundColor: "#F97316", fontFamily: "var(--font-work-sans)" }}
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#EA6A0A")}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#F97316")}
             >
@@ -96,14 +73,6 @@ export function Navbar() {
         {/* Mobile menu */}
         {mobileOpen && (
           <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4 space-y-3">
-            <a
-              href="tel:+18005551234"
-              className="flex items-center gap-2 text-sm font-semibold py-2"
-              style={{ color: "#0052CC" }}
-            >
-              <Phone className="w-4 h-4" />
-              (800) 555-1234
-            </a>
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}

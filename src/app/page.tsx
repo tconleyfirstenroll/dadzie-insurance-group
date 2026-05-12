@@ -1,6 +1,7 @@
 import Link from "next/link";
-import { Shield, Heart, FileText, Star, ArrowRight, CheckCircle, Phone, Users, Award } from "lucide-react";
+import { Shield, Heart, FileText, Star, ArrowRight, CheckCircle, Users, Award } from "lucide-react";
 import { LeadForm } from "@/components/LeadForm";
+import { HeroIllustration } from "@/components/HeroIllustration";
 
 const PRODUCTS = [
   {
@@ -61,7 +62,7 @@ const STEPS = [
 const TRUST_STATS = [
   { value: "500+", label: "Families Covered" },
   { value: "20+", label: "Carrier Partners" },
-  { value: "4.9★", label: "Client Rating" },
+  { value: "100%", label: "Customer Satisfaction Goal" },
   { value: "100%", label: "Licensed Agents" },
 ];
 
@@ -114,14 +115,13 @@ export default function HomePage() {
                   Get a Free Quote
                   <ArrowRight className="w-4 h-4" />
                 </Link>
-                <a
-                  href="tel:+18005551234"
+                <Link
+                  href="/plans"
                   className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl font-bold text-base border-2 transition-colors"
                   style={{ borderColor: "#0052CC", color: "#0052CC", fontFamily: "var(--font-work-sans)" }}
                 >
-                  <Phone className="w-4 h-4" />
-                  (800) 555-1234
-                </a>
+                  View Our Plans
+                </Link>
               </div>
 
               <div className="flex flex-wrap gap-x-6 gap-y-2">
@@ -134,11 +134,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right: lead form */}
-            <div>
-              <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 p-8">
-                <LeadForm />
-              </div>
+            {/* Right: hero illustration */}
+            <div className="flex items-center justify-center">
+              <HeroIllustration />
             </div>
           </div>
         </div>
@@ -308,25 +306,8 @@ export default function HomePage() {
                 </h2>
                 <p className="text-gray-500 mt-4 leading-relaxed">
                   Our licensed agents are available Mon–Fri 8am–8pm ET and Sat 9am–5pm ET.
-                  Call us directly or fill out the form and we&apos;ll call you.
+                  Fill out the form and we&apos;ll reach out to walk you through your options.
                 </p>
-              </div>
-
-              <div className="rounded-2xl p-6" style={{ backgroundColor: "#EFF6FF" }}>
-                <a href="tel:+18005551234" className="flex items-center gap-4 group">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: "#0052CC" }}>
-                    <Phone className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-500 font-medium">Call us directly</p>
-                    <p
-                      className="text-2xl font-bold group-hover:text-orange-500 transition-colors"
-                      style={{ color: "#0052CC", fontFamily: "var(--font-work-sans)" }}
-                    >
-                      (800) 555-1234
-                    </p>
-                  </div>
-                </a>
               </div>
 
               <div className="space-y-3">

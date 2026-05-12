@@ -1,21 +1,14 @@
-import { Phone, Mail, Clock, MapPin } from "lucide-react";
+import { Mail, Clock, MapPin } from "lucide-react";
 import { LeadForm } from "@/components/LeadForm";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact Us | Dadzie Insurance Group",
   description:
-    "Reach a licensed Dadzie Insurance Group agent by phone, email, or our online form. No pressure — just honest guidance.",
+    "Reach a licensed Dadzie Insurance Group agent by email or our online form. No pressure — just honest guidance.",
 };
 
 const CONTACT_INFO = [
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "(800) 555-1234",
-    href: "tel:+18005551234",
-    sub: "Speak directly with a licensed agent",
-  },
   {
     icon: Mail,
     label: "Email",
@@ -69,7 +62,7 @@ export default function ContactPage() {
                   Contact Information
                 </h2>
                 <p className="text-gray-500 text-sm">
-                  Reach out by phone, email, or use the form to request a callback from a licensed agent.
+                  Reach out by email or use the form to request a callback from a licensed agent.
                 </p>
               </div>
 
@@ -103,17 +96,9 @@ export default function ContactPage() {
                   Fastest Response
                 </p>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  For the quickest help, call us directly during business hours. A licensed
-                  agent can typically quote you in under 15 minutes.
+                  Fill out the form and a licensed agent will reach out within one business day
+                  to walk you through your options — no commitment required.
                 </p>
-                <a
-                  href="tel:+18005551234"
-                  className="inline-flex items-center gap-2 font-bold text-sm mt-2"
-                  style={{ color: "#0052CC", fontFamily: "var(--font-work-sans)" }}
-                >
-                  <Phone className="w-4 h-4" />
-                  Call (800) 555-1234
-                </a>
               </div>
             </div>
 

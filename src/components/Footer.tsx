@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const PLAN_LINKS = [
   { href: "/plans#aca", label: "ACA Health Plans" },
@@ -39,13 +39,6 @@ export function Footer() {
               Trusted health &amp; life insurance guidance from licensed agents who put you first.
             </p>
             <div className="space-y-2">
-              <a
-                href="tel:+18005551234"
-                className="flex items-center gap-2 text-white text-sm hover:text-orange-300 transition-colors"
-              >
-                <Phone className="w-4 h-4 flex-shrink-0" />
-                (800) 555-1234
-              </a>
               <a
                 href="mailto:info@dadzieinsurancegroup.com"
                 className="flex items-center gap-2 text-white text-sm hover:text-orange-300 transition-colors"
