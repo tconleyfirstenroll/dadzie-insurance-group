@@ -26,14 +26,15 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50">
       <nav className={`bg-white transition-shadow ${scrolled ? "shadow-md" : "shadow-sm"}`}>
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/logo.png"
               alt="Dadzie Insurance Group"
               width={720}
               height={240}
-              className="h-[120px] w-auto object-contain"
+              className="h-[160px] w-auto object-contain"
+              style={{ mixBlendMode: "multiply" }}
               priority
             />
           </Link>
