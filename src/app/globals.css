@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1A1A1A;
+  --cobalt: #0052CC;
+  --cobalt-dark: #003D99;
+  --cobalt-light: #1A6FE8;
+  --orange: #F97316;
+  --orange-dark: #EA6A0A;
+  --offwhite: #F8F9FA;
+  --nearblack: #1A1A1A;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-cobalt: var(--cobalt);
+  --color-cobalt-dark: var(--cobalt-dark);
+  --color-cobalt-light: var(--cobalt-light);
+  --color-orange: var(--orange);
+  --color-offwhite: var(--offwhite);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Instrument Sans', 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Work Sans', 'Inter', sans-serif;
+  font-weight: 700;
+}
