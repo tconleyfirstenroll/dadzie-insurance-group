@@ -25,7 +25,10 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50">
-      <nav className={`bg-white transition-shadow ${scrolled ? "shadow-md" : "shadow-sm"}`}>
+      <nav
+        className={`transition-shadow ${scrolled ? "shadow-md" : "shadow-sm"}`}
+        style={{ backgroundColor: "#F8F9FA" }}
+      >
         <div className="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
           <Link href="/" className="flex-shrink-0">
             <Image
@@ -34,7 +37,6 @@ export function Navbar() {
               width={720}
               height={240}
               className="h-[160px] w-auto object-contain"
-              style={{ mixBlendMode: "multiply" }}
               priority
             />
           </Link>
@@ -74,7 +76,7 @@ export function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="md:hidden border-t border-gray-100 bg-white px-6 py-4 space-y-3">
+          <div className="md:hidden border-t border-gray-200 px-6 py-4 space-y-3" style={{ backgroundColor: "#F8F9FA" }}>
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
