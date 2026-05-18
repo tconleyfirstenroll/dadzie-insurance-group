@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Shield, Heart, FileText, Star, CheckCircle, ArrowRight, Phone } from "lucide-react";
+import { Shield, Heart, FileText, Star, CheckCircle, ArrowRight } from "lucide-react";
 import { LeadForm } from "@/components/LeadForm";
 import type { Metadata } from "next";
 
@@ -21,7 +21,7 @@ const PLANS = [
       "10 essential health benefits required by law",
       "Premium tax credits based on household income",
       "No denial for pre-existing conditions",
-      "Open enrollment November–January; SEP for qualifying events",
+      "Enrollment period October through January; special enrollment for qualifying life events",
       "Individual, family, and small business plans available",
       "Catastrophic plans available for those under 30",
     ],
@@ -149,13 +149,6 @@ export default function PlansPage() {
                     >
                       {cta} <ArrowRight className="w-4 h-4" />
                     </Link>
-                    <a
-                      href="tel:+18005551234"
-                      className="flex items-center justify-center gap-2 w-full py-3 rounded-xl font-bold text-sm border-2 transition-colors"
-                      style={{ borderColor: "#0052CC", color: "#0052CC", fontFamily: "var(--font-work-sans)" }}
-                    >
-                      <Phone className="w-4 h-4" /> (800) 555-1234
-                    </a>
                   </div>
                 </div>
               </div>

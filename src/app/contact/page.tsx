@@ -26,7 +26,7 @@ const CONTACT_INFO = [
   {
     icon: MapPin,
     label: "Location",
-    value: "Atlanta, GA",
+    value: "Kennesaw, GA (Metro Atlanta)",
     href: null,
     sub: "Licensed to serve clients nationwide",
   },

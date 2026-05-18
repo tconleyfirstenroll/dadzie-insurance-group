@@ -183,8 +183,13 @@ export function LeadForm({ compact = false }: { compact?: boolean }) {
       </button>
 
       <p className="text-xs text-gray-400 leading-relaxed">
-        By submitting this form, you consent to being contacted by a licensed insurance agent.
-        We never sell your information to third parties.
+        By submitting this form, I provide my express written consent for Dadzie Insurance Group
+        and its licensed insurance agents to contact me at the telephone number provided, including
+        via automated telephone dialing systems, pre-recorded or artificial voice messages, and/or
+        text messages. Message frequency varies. Message and data rates may apply. Reply{" "}
+        <strong>STOP</strong> to opt out at any time. Reply <strong>HELP</strong> for help. This
+        consent is not a condition of purchasing any goods or services. We never sell your
+        information to third parties.
       </p>
     </form>
   );

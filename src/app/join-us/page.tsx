@@ -53,7 +53,7 @@ const WHY_JOIN = [
     icon: DollarSign,
     title: "Uncapped Earning Potential",
     description:
-      "Base salary plus commissions plus bonuses. Our top agents earn over $100K annually. The more clients you help, the more you earn — with no ceiling.",
+      "Year 1 earnings typically range from $58,000 to $62,000. Top performers reach $75,000 or more. Base salary plus commissions plus bonuses — the more clients you help, the more you earn.",
   },
   {
     icon: Zap,
@@ -82,7 +82,7 @@ const WHY_JOIN = [
 ];
 
 const BENEFITS = [
-  { category: "Compensation", items: ["Competitive base salary", "Uncapped commission structure", "Performance bonuses", "Renewal commissions", "Top agent: $100K+/year"] },
+  { category: "Compensation", items: ["Competitive base salary", "Uncapped commission structure", "Performance bonuses", "Renewal commissions", "Year 1: $58K–$62K typical", "Top performers: $75,000+"] },
   { category: "Training & Growth", items: ["Paid pre-licensing course", "All exam & licensing fees covered", "Ongoing product training", "Leadership development track", "Mentorship program"] },
   { category: "Support & Tools", items: ["Qualified leads provided", "CRM & quoting technology", "Dedicated compliance support", "Manager weekly check-ins", "Agent resource library"] },
   { category: "Work & Culture", items: ["Remote-friendly options", "Work-life balance focus", "Inclusive team environment", "Regular team events", "Recognition & rewards"] },
@@ -189,7 +189,9 @@ function ApplyForm() {
       >
         {submitting ? <><Loader2 className="w-4 h-4 animate-spin" />Submitting…</> : <>Submit Application <ArrowRight className="w-4 h-4" /></>}
       </button>
-      <p className="text-xs text-gray-400">By submitting, you consent to being contacted by a DIG recruiting team member.</p>
+      <p className="text-xs text-gray-400 leading-relaxed">
+        By submitting, you consent to being contacted by a Dadzie Insurance Group recruiting team member via email or phone. Message and data rates may apply. Reply <strong>STOP</strong> to opt out of text messages at any time.
+      </p>
     </form>
   );
 }
@@ -246,7 +248,7 @@ export default function JoinUsPage() {
         <div className="max-w-7xl mx-auto px-6 py-9">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { value: "$100K+", label: "Top Agent Earnings" },
+              { value: "$58K–$75K+", label: "Year 1 Earnings Range" },
               { value: "100%", label: "Paid Licensing & Training" },
               { value: "Day 1", label: "Leads Provided" },
               { value: "50%+", label: "Leadership Promoted From Within" },
